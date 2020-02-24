@@ -1,7 +1,6 @@
 html {
     color: rgb(33, 33, 33);
     font-size: 16px;
-    /* background-color: #FFC89F; */
     font-family: Helvetica, sans-serif;
     scroll-behavior: smooth;
     height: 100%;
@@ -10,6 +9,8 @@ html {
 }
 
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     box-sizing: border-box;
     overflow: hidden;
@@ -40,15 +41,48 @@ body {
     width: 90%;
     background-color: #FFC89F;
     padding: 1.8vw;
+    -webkit-animation: fadein 3.3s;
+    -moz-animation: fadein 3.3s;
+    -ms-animation: fadein 3.3s;
+    -o-animation: fadein 3.3s;
+    animation: fadein 3.3s;
 }
+
+.imgWrap {
+    width: 80%;
+    margin: 7vh auto;
+    
+}
+
+p {
+    font-size: 2.2vh;
+    line-height: 4vh;
+}
+
+.publicImgLimited {
+    width: 100%;
+    height: auto;
+}
+
 a {
     text-decoration: none;
     color: rgb(33, 33, 33);
+    transition: 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ffa29f;
+    transform: scale(1.3)
 }
 
 .socialIcons {
     font-size: 2.5vw;
     padding-left: 1.8vw;
+    -webkit-animation: fadein 3.3s;
+    -moz-animation: fadein 3.3s;
+    -ms-animation: fadein 3.3s;
+    -o-animation: fadein 3.3s;
+    animation: fadein 3.3s;
 }
 
 .indent {
@@ -62,12 +96,19 @@ a {
     width: 100%;
     height: 100%;
 }
+
 .greeting {
-    
+    padding-left: -1vw;
 }
 
 .downArrow {
     font-size: 2vw;
+}
+
+.innerContent {
+    width: 80%;
+    height: auto;
+    margin: auto;
 }
 
 .bigEmptyDiv {
@@ -76,22 +117,97 @@ a {
     align-items: center;
     padding-top: 46vh;
     padding-bottom: 90vh;
-   
+    -webkit-animation: fadein 3.3s;
+    -moz-animation: fadein 3.3s;
+    -ms-animation: fadein 3.3s;
+    -o-animation: fadein 3.3s;
+    animation: fadein 3.3s;
+
 }
+
 .contentBox {
     display: flex;
-    background-color: rgba(255,200,159,0.18);
+    background-color: rgba(255, 200, 159, 0.18);
     flex-direction: column;
     font-size: 1.5vw;
-    line-height: 1vw;
+    line-height: 7vh;
     width: 73%;
     flex-grow: 1;
     height: 100vh;
-    padding-left: 1rem;
     overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
-@media screen and (max-width: 500px) {
+
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    body {
+        margin: 0;
+        padding: 0;
+        ;
+    }
+
+    .mainBox {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0vh;
+        flex-direction: column;
+    }
+
     .sideBar {
         background-color: #FFC89F;
         display: flex;
@@ -99,36 +215,107 @@ a {
         line-height: 1vw;
         justify-content: center;
         width: 100%;
-        height: 30vw;
-        overflow: auto;
-        padding: 0;
+        height: auto;
+        padding: 1vh;
+        overflow: visible;
 
     }
+
+    .socialIcons {
+        width: 100%;
+        font-size: 1vh;
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        padding-top: 2vh;
+        padding-left: 1.1vh;
+    }
+
     .nameBox {
         display: flex;
         flex-direction: column;
-        font-size: 1.6vw;
+        font-size: 2.6vw;
         width: 100%;
         background-color: #FFC89F;
         padding: 1.8vw;
-    }
-    
-    .indent {
-        align-self: baseline;
-        padding-left: 3vh;;
+        height: auto;
     }
 
-    .mainBox {
-        display: flex;
-        width: 100vh;
-        height: 100vh;
-        margin: 0vh;
-        flex-direction: column;
+    .indent {
+        align-self: baseline;
+        padding-left: 3vh;
+        ;
     }
 
     .contentBox {
         width: 100%;
-        overflow-y: visible;
+        line-height: 10vh;
+        font-size: 1.9vh;
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        margin: 0;
+        padding: 0;
+        ;
+    }
+
+    .mainBox {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .sideBar {
+        background-color: #FFC89F;
+        display: flex;
+        flex-direction: column;
+        line-height: 1vh;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        overflow: visible;
+
+    }
+
+
+    .socialIcons {
+        background-color: #FFC89F;
+        width: 100%;
+        font-size: 2.6vh;
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        padding-top: 3vh;
+        padding-left: 1.1vh;
+        padding-bottom: 1vw;
+    }
+
+    .nameBox {
+        display: flex;
+        flex-direction: column;
+        font-size: 2.6vw;
+        width: 100%;
+        background-color: #FFC89F;
+        padding: 1.8vw;
+        height: auto;
+    }
+
+    .indent {
+        align-self: baseline;
+        padding-left: 3vh;
+        ;
+    }
+
+    .contentBox {
+        width: 100%;
+        font-size: 1.9vh;
+        overflow-y: scroll;
     }
 
 
