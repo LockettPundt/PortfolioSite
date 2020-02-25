@@ -60,10 +60,6 @@ body {
     /* margin-bottom: 10vh; */
 }
 
-.postgreSQL {
-    width: 4vw;
-    height: auto;
-}
 
 .imgWrap {
     width: 80%;
@@ -288,9 +284,6 @@ a:hover {
         font-size: 8vw;
     }
 
-    .postgreSQL {
-        width: 8vw;
-    }
     .innerContent {
         margin-bottom: 50vh;
     }
