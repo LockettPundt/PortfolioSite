@@ -16,6 +16,7 @@ body {
     overflow: hidden;
     flex-shrink: 0;
     margin: 0;
+    margin-bottom: 100vh;
     width: 100%;
 }
 
@@ -47,11 +48,27 @@ body {
     -o-animation: fadein 3.3s;
     animation: fadein 3.3s;
 }
+.skillsSection {
+    width: 100%;
+}
+
+.skillsBox {
+    font-size: 4vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3vh auto;
+    /* margin-bottom: 10vh; */
+}
+
+.postgreSQL {
+    width: 4vw;
+    height: auto;
+}
 
 .imgWrap {
     width: 80%;
     margin: 7vh auto;
-    
+
 }
 
 p {
@@ -98,17 +115,18 @@ a:hover {
 }
 
 .greeting {
-    padding-left: -1vw;
+    /* padding-left: -1vw; */
 }
 
 .downArrow {
-    font-size: 2vw;
+    font-size: 3vw;
 }
 
 .innerContent {
     width: 80%;
     height: auto;
-    margin: auto;
+    margin: 0 auto 20vh auto;
+    overflow: visible;
 }
 
 .bigEmptyDiv {
@@ -192,6 +210,94 @@ a:hover {
         opacity: 1;
     }
 }
+@media screen and (max-width: 500px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .mainBox {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .sideBar {
+        background-color: #FFC89F;
+        display: flex;
+        flex-direction: column;
+        line-height: 1vh;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        overflow: visible;
+
+    }
+    .bigEmptyDiv {
+        padding-top: 30vh;
+    }
+
+    .greeting {
+        padding-left: 0vw;
+    }
+
+    .downArrow {
+        font-size: 7vw;
+    }
+
+
+    .socialIcons {
+        background-color: #FFC89F;
+        width: 30%;
+        font-size: 2.6vh;
+        display: flex;
+        flex-direction: row;
+        align-self: flex-start;
+        justify-content: space-evenly;
+        padding-top: 3vh;
+        padding-left: 0.1vw;
+        padding-bottom: 1vh;
+    }
+
+    .nameBox {
+        display: flex;
+        flex-direction: column;
+        font-size: 2.6vw;
+        max-width: 100%;
+        background-color: #FFC89F;
+        padding: 1.8vw;
+        height: auto;
+    }
+
+    .indent {
+        align-self: baseline;
+        padding-left: 3vh;
+        
+    }
+
+    .contentBox {
+        width: 100%;
+        font-size: 1.9vh;
+        overflow-y: scroll;
+    }
+
+    .skillsBox {
+        font-size: 8vw;
+    }
+
+    .postgreSQL {
+        width: 8vw;
+    }
+    .innerContent {
+        margin-bottom: 50vh;
+    }
+
+
+
+}
 
 @media screen and (max-width: 300px) {
     body {
@@ -222,19 +328,20 @@ a:hover {
     }
 
     .socialIcons {
-        width: 100%;
-        font-size: 1vh;
+        width: 40%;
+        font-size: 2.6vh;
         display: flex;
         flex-direction: row;
         align-self: flex-start;
+        justify-content: space-evenly;
         padding-top: 2vh;
-        padding-left: 1.1vh;
+        padding-left: 1.1vw;
     }
 
     .nameBox {
         display: flex;
         flex-direction: column;
-        font-size: 2.6vw;
+        font-size: 2.9vw;
         width: 100%;
         background-color: #FFC89F;
         padding: 1.8vw;
@@ -253,71 +360,17 @@ a:hover {
         font-size: 1.9vh;
         overflow-y: scroll;
     }
+
+    .greeting {
+        padding-left: -1vw;
+    }
+
+    .bigEmptyDiv {
+        padding-top: 30vh;
+    }
+
+    .downArrow {
+        font-size: 7vw;
+    }
 }
 
-@media screen and (max-width: 500px) {
-    body {
-        margin: 0;
-        padding: 0;
-        ;
-    }
-
-    .mainBox {
-        display: flex;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        flex-direction: column;
-    }
-
-    .sideBar {
-        background-color: #FFC89F;
-        display: flex;
-        flex-direction: column;
-        line-height: 1vh;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        overflow: visible;
-
-    }
-
-
-    .socialIcons {
-        background-color: #FFC89F;
-        width: 100%;
-        font-size: 2.6vh;
-        display: flex;
-        flex-direction: row;
-        align-self: flex-start;
-        padding-top: 3vh;
-        padding-left: 1.1vh;
-        padding-bottom: 1vw;
-    }
-
-    .nameBox {
-        display: flex;
-        flex-direction: column;
-        font-size: 2.6vw;
-        width: 100%;
-        background-color: #FFC89F;
-        padding: 1.8vw;
-        height: auto;
-    }
-
-    .indent {
-        align-self: baseline;
-        padding-left: 3vh;
-        ;
-    }
-
-    .contentBox {
-        width: 100%;
-        font-size: 1.9vh;
-        overflow-y: scroll;
-    }
-
-
-
-}
