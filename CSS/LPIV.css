@@ -48,22 +48,76 @@ body {
     -o-animation: fadein 3.3s;
     animation: fadein 3.3s;
 }
+
 .skillsSection {
     width: 100%;
+    margin-top: 10vh;
+}
+
+.projectSection {
+    width: 100%;
+    height: auto;
+    margin: 10vh auto;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.pyGame {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10vh auto;
+    
+}
+
+.projectTitle {
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.projectTitle {
+    padding-right: 2vw;
+}
+
+.twentyFourGoProject {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.twentyFourGoImgWrap {
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: 3vh auto;
+}
+
+
+.pyImgWrap {
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin: 3vh auto;
+
 }
 
 .skillsBox {
     font-size: 4vw;
     display: flex;
     justify-content: space-evenly;
-    margin: 3vh auto;
-    /* margin-bottom: 10vh; */
+    margin: 10vh auto;
 }
 
 
 .imgWrap {
     width: 80%;
-    margin: 7vh auto;
+    margin: 10vh auto;
 
 }
 
@@ -110,9 +164,9 @@ a:hover {
     height: 100%;
 }
 
-.greeting {
-    /* padding-left: -1vw; */
-}
+/* .greeting {
+    padding-left: -1vw;
+} */
 
 .downArrow {
     font-size: 3vw;
@@ -206,6 +260,7 @@ a:hover {
         opacity: 1;
     }
 }
+
 @media screen and (max-width: 500px) {
     body {
         margin: 0;
@@ -232,6 +287,7 @@ a:hover {
         overflow: visible;
 
     }
+
     .bigEmptyDiv {
         padding-top: 30vh;
     }
@@ -271,7 +327,7 @@ a:hover {
     .indent {
         align-self: baseline;
         padding-left: 3vh;
-        
+
     }
 
     .contentBox {
@@ -366,4 +422,3 @@ a:hover {
         font-size: 7vw;
     }
 }
-
