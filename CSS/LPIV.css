@@ -162,10 +162,10 @@ a:hover {
     height: 100%;
 }
 
-/* .greeting {
-    padding-left: -1vw;
-} */
-
+.playlistBox {
+    display: flex;
+    justify-content: center;
+}
 .downArrow {
     font-size: 3vw;
 }
