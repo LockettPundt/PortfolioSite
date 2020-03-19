@@ -2,10 +2,13 @@ html {
     color: rgb(33, 33, 33);
     font-size: 16px;
     font-family: Helvetica, sans-serif;
-    scroll-behavior: smooth;
     height: 100%;
     margin: 0;
     padding: 0;
+}
+
+.introSection {
+    display: flex;
 }
 
 body {
@@ -74,6 +77,10 @@ img {
 
 }
 
+.greeting {
+    text-align: center;
+}
+
 .sectionTitle {
     font-size: 3vh;
     font-weight: bold;
@@ -99,6 +106,12 @@ img {
     margin: 3vh auto;
 }
 
+.pandemicGeorgiaWrap {
+    width: 90%;
+    height: auto;
+    margin: 3vh auto;
+}
+
 
 .pyImgWrap {
     width: 90%;
@@ -118,8 +131,7 @@ img {
 
 .imgWrap {
     width: 80%;
-    margin: 10vh auto;
-
+    margin: 7vh auto;
 }
 
 p {
@@ -130,6 +142,7 @@ p {
 .publicImgLimited {
     width: 100%;
     height: auto;
+    border-radius: 50%;
 }
 
 a {
@@ -159,24 +172,26 @@ a:hover {
 }
 
 .mainBox {
-    scroll-behavior: smooth;
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
+    scroll-behavior: smooth;
+    overflow-Y: scroll;
 }
 
-.playlistBox {
-    display: flex;
-    justify-content: center;
-}
 
 .playlistLinks {
     font-size: 3vh;
 }
 
 .downArrow {
-    font-size: 3vw;
+    font-size: 5vh;
+}
+
+.intro {
+    width: 80%;
+    margin: auto;
 }
 
 .innerContent {
@@ -190,8 +205,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 46vh;
-    padding-bottom: 90vh;
+    padding-top: 34vh;
+    padding-bottom: 53vh;
     -webkit-animation: fadein 3.3s;
     -moz-animation: fadein 3.3s;
     -ms-animation: fadein 3.3s;
@@ -209,8 +224,21 @@ a:hover {
     width: 73%;
     flex-grow: 1;
     height: 100vh;
+    scroll-behavior: smooth;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
+}
+
+.anchor1 {
+    visibility: hidden;
+}
+
+.playlist {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
 }
 
 
@@ -268,10 +296,36 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 1380px) {
+    .bigEmptyDiv {
+        padding-top: 35vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .bigEmptyDiv {
+        padding-top: 39vh;
+        padding-bottom: 53vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
     body {
         margin: 0;
         padding: 0;
+    }
+
+    .introSection {
+        /* font-size: 3.2vh; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 35vh;
+    }
+
+    .imgWrap {
+        margin: 5vh auto
     }
 
     .mainBox {
@@ -284,6 +338,8 @@ a:hover {
 
     .sideBar {
         background-color: #FFC89F;
+        position: fixed;
+        z-index: 2;
         display: flex;
         flex-direction: column;
         line-height: 1vh;
@@ -296,15 +352,16 @@ a:hover {
     }
 
     .bigEmptyDiv {
-        padding-top: 30vh;
+        padding-top: 50vh;
     }
 
     .greeting {
+        text-align: center;
         padding-left: 0vw;
     }
 
     .downArrow {
-        font-size: 7vw;
+        font-size: 5vh;
     }
 
 
@@ -317,7 +374,7 @@ a:hover {
         align-self: flex-start;
         justify-content: space-evenly;
         padding-top: 3vh;
-        padding-left: 0.1vw;
+        padding-left: 1.1vw;
         padding-bottom: 1vh;
     }
 
@@ -351,9 +408,29 @@ a:hover {
         margin-bottom: 50vh;
     }
 
-
+    .intro {
+        /* margin-top: 7vh; */
+        text-align: center;
+    }
 
 }
+
+@media screen and (max-width: 375px) {
+
+    .bigEmptyDiv {
+        padding-top: 40vh;
+    }
+
+    .anchor1:target {
+        padding-top: 39vh;
+    }
+
+    .introSection {
+        margin-top: 30vh;
+        line-height: 5vh;
+    }
+}
+
 
 @media screen and (max-width: 300px) {
     body {
@@ -391,7 +468,7 @@ a:hover {
         align-self: flex-start;
         justify-content: space-evenly;
         padding-top: 2vh;
-        padding-left: 1.1vw;
+        padding-left: 2.1vw;
     }
 
     .nameBox {
@@ -425,7 +502,7 @@ a:hover {
         padding-top: 30vh;
     }
 
-    .downArrow {
-        font-size: 7vw;
-    }
+    /* .downArrow {
+        font-size: 7vh;
+    } */
 }

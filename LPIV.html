@@ -57,26 +57,41 @@
       <div class="contentBox">
         <div class="innerContent">
           <div class="bigEmptyDiv">
-            <p class="greeting"><em>Hi. Come on in.</em></p>
-            <a href="#" class="far fa-arrow-alt-circle-down downArrow"></a>
+            <div class="greeting">
+              <em
+                ><h1 class="text1">
+                  Hi there. Come on in.
+                </h1></em
+              >
+              <a
+                href="#anchor1"
+                class="far fa-arrow-alt-circle-down downArrow"
+                target=""
+                id="scrollArrow"
+              ></a>
+            </div>
           </div>
-          <h1 class="text1" id="targetScroll">Hi there!</h1>
-          <h1>My name is Lockett Pundt.</h1>
-          <h2 class="text2">I'm a Developer located in Atlanta.</h2>
-          <div class="imgWrap">
-            <img
-              class="publicImgLimited"
-              src="./IMG/IMG_3635.jpeg"
-              alt="self potrait"
-            />
-          </div>
-          <section class="aboutSection">
+          <a name="anchor1" id="anchor1" class="anchor1"></a>
+          <section class="introSection">
+            <div class="intro">
+              <h1></a>I'm Lockett Pundt.</h1>
+              <h2 class="text2">I'm a Web Developer located in Atlanta.</h2>
+            </div>
+            <figure class="imgWrap">
+              <img
+                class="publicImgLimited"
+                src="./IMG/IMG_3635small.jpeg"
+                alt="self potrait"
+              />
+            </figure>
+          </section>
+          <section class="aboutSection" id="aboutSection">
             <h2 class="sectionTitle">About me:</h2>
             <p>
-              I'm an enthusiastic Web/Software Developer who has turned a 'code
-              curious' hobby into a realized dream. I enrolled at DigitalCrafts
-              in January of 2020 to study Full Stack Web Development and take a
-              budding passion to the next level.
+              I'm an enthusiastic Web/Software Developer who has turned a
+              curiosity into a reality. I enrolled at DigitalCrafts in January
+              of 2020 to study Full Stack Web Development and take a budding
+              passion to the next level.
             </p>
             <p>
               I'm a musician at heart who has been extremely fortunate to travel
@@ -134,6 +149,35 @@
                 <img src="./IMG/24go.jpg" alt="landing page for 24go" />
               </div>
             </div>
+            <div class="pandemicGeogia">
+              <h3 class="projectTitle">
+                <a
+                  href="https://pandemic-georgia.lpiv.co"
+                  target="_blank"
+                >Pandemic Georgia
+              </a>
+              <a
+                  class="fab fa-github"
+                  href="https://github.com/LockettPundt/pandemic-georgia"
+                  target="_blank"
+                ></a>
+              </h3>
+              <p class="projectSectionText">
+                Based on the board game Pandemic, this was my first full stack group project created
+                alonside 3 other developers. The premise for the game was to make a smaller and 
+                more localized version of the popular game using a database to record the game state 
+                and populate the board. The game takes place over the course of 19 days and in that time 
+                you are travelling across the state in search of research. Winning is accomplished with a 
+                cooperative effort to uncover 4 research breakthroughs before the epidemic becomes untenable. 
+                Built using Node.js, Express, HTML, CSS, JS and PostgreSQL.
+              </p>
+              <div class="pandemicGeorgiaWrap">
+                <img
+                  src="./IMG/pandemicGeorgia.png"
+                  alt="backend version of pandemic"
+                />
+              </div>
+            </div>
             <div class="pyGame">
               <h3 class="projectTitle">
                 <a
@@ -166,11 +210,16 @@
             <h2 class="sectionTitle">Playlists:</h2>
             <div>
               <a
-                class="playlistLinks"
                 href="https://open.spotify.com/playlist/47qmBzq9lFfouIGCMegyCC?si=F1LIprBkT3uGqCvSIA0MmA"
                 >Winter 2020</a
               >
             </div>
+            <div>
+              <a
+              href="https://open.spotify.com/playlist/5tLZnrh1UizSywAoXfKy0G?si=WW--7RIGSIun8J6y845P0Q"
+              >Spring 2020 (In Progress)
+            </a>
+          </div>
           </section>
         </div>
       </div>
