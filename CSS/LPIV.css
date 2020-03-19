@@ -71,15 +71,18 @@ img {
     display: flex;
     flex-direction: column;
     margin: 5vh auto;
-    
+
+}
+
+.sectionTitle {
+    font-size: 3vh;
+    font-weight: bold;
+    padding-right: 2vw;
 }
 
 .projectTitle {
     font-size: 3vh;
     font-weight: bold;
-}
-
-.projectTitle {
     padding-right: 2vw;
 }
 
@@ -130,6 +133,7 @@ p {
 }
 
 a {
+    font-family: Helvetica, sans-serif;
     text-decoration: none;
     color: rgb(33, 33, 33);
     transition: 0.3s ease-in-out;
@@ -166,6 +170,11 @@ a:hover {
     display: flex;
     justify-content: center;
 }
+
+.playlistLinks {
+    font-size: 3vh;
+}
+
 .downArrow {
     font-size: 3vw;
 }
