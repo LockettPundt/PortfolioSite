@@ -1,9 +1,8 @@
 'use strict'
-const downArrow = document.getElementById("downArrow");
-// downArrow.addEventListener('click', (e) => {
-//     alert('HI');
-// })
-downArrow.addEventListener('click', e => {
-    let target = document.getElementById("targetScroll");
-    target.scrollIntoView({behavior: 'smooth'})
+
+const downArrow = document.getElementById("scrollArrow")
+const anchor = document.getElementById("anchor1");
+downArrow.addEventListener("click", e => {
+    e.preventDefault();
+    anchor.scrollIntoView(true)
 });
