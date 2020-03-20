@@ -1,508 +1,526 @@
 html {
-    color: rgb(33, 33, 33);
-    font-size: 16px;
-    font-family: Helvetica, sans-serif;
-    height: 100%;
-    margin: 0;
-    padding: 0;
+  color: rgb(33, 33, 33);
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .introSection {
-    display: flex;
+  display: flex;
 }
 
 body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    box-sizing: border-box;
-    overflow: hidden;
-    flex-shrink: 0;
-    margin: 0;
-    margin-bottom: 100vh;
-    width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-shrink: 0;
+  margin: 0;
+  margin-bottom: 100vh;
+  width: 100%;
 }
 
 .sideBar {
-    background-color: #FFC89F;
+  background-color: #ffc89f;
+  display: flex;
+  flex-direction: column;
+  line-height: 1vw;
+  justify-content: center;
+  flex-grow: 1;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nameBox {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6vw;
+  width: 90%;
+  background-color: #ffc89f;
+  padding: 1.8vw;
+  -webkit-animation: fadein 3.3s;
+  -moz-animation: fadein 3.3s;
+  -ms-animation: fadein 3.3s;
+  -o-animation: fadein 3.3s;
+  animation: fadein 3.3s;
+}
+
+.skillsSection {
+  width: 100%;
+  margin-top: 10vh;
+}
+
+.projectSection {
+  width: 100%;
+  height: auto;
+  margin: 10vh auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.pyGame {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 5vh auto;
+}
+
+.greeting {
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 3vh;
+  font-weight: bold;
+  padding-right: 2vw;
+}
+
+.projectTitle {
+  font-size: 3vh;
+  font-weight: bold;
+  padding-right: 2vw;
+}
+
+.twentyFourGoProject {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+}
+
+.twentyFourGoImgWrap {
+  width: 90%;
+  height: auto;
+  margin: 3vh auto;
+}
+
+.pandemicGeorgiaWrap {
+  width: 90%;
+  height: auto;
+  margin: 3vh auto;
+}
+
+.pyImgWrap {
+  width: 90%;
+  height: auto;
+  margin: 3vh auto;
+  display: flex;
+  align-items: center;
+}
+
+.skillsBox {
+  font-size: 4vw;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 10vh auto;
+}
+
+.imgWrap {
+  width: 80%;
+  margin: 7vh auto;
+}
+
+p {
+  font-size: 2.2vh;
+  line-height: 4vh;
+}
+
+.publicImgLimited {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+a {
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+  color: rgb(33, 33, 33);
+  transition: 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ffa29f;
+  transform: scale(1.3);
+}
+
+.socialIcons {
+  font-size: 2.5vw;
+  padding-left: 1.8vw;
+  -webkit-animation: fadein 3.3s;
+  -moz-animation: fadein 3.3s;
+  -ms-animation: fadein 3.3s;
+  -o-animation: fadein 3.3s;
+  animation: fadein 3.3s;
+}
+
+.socialIconsBottom {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  font-size: 2.5vw;
+  margin-top: 30vh;
+  -webkit-animation: fadein 3.3s;
+  -moz-animation: fadein 3.3s;
+  -ms-animation: fadein 3.3s;
+  -o-animation: fadein 3.3s;
+  animation: fadein 3.3s;
+}
+
+.indent {
+  align-self: center;
+}
+
+.mainBox {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+}
+
+.playlistLinks {
+  font-size: 3vh;
+}
+
+.downArrow {
+  font-size: 5vh;
+}
+
+.intro {
+  width: 80%;
+  margin: auto;
+}
+
+.innerContent {
+  width: 80%;
+  height: auto;
+  margin: 0 auto 5vh auto;
+  overflow: visible;
+}
+
+.bigEmptyDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 34vh;
+  padding-bottom: 53vh;
+  -webkit-animation: fadein 3.3s;
+  -moz-animation: fadein 3.3s;
+  -ms-animation: fadein 3.3s;
+  -o-animation: fadein 3.3s;
+  animation: fadein 3.3s;
+}
+
+.contentBox {
+  display: flex;
+  background-color: rgba(255, 200, 159, 0.18);
+  flex-direction: column;
+  font-size: 1.5vw;
+  line-height: 7vh;
+  width: 73%;
+  flex-grow: 1;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.anchor1 {
+  visibility: hidden;
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1380px) {
+  .bigEmptyDiv {
+    padding-top: 35vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .bigEmptyDiv {
+    padding-top: 39vh;
+    padding-bottom: 53vh;
+  }
+  .socialIconsBottom {
+    font-size: 3.2vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .introSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 35vh;
+  }
+
+  .imgWrap {
+    margin: 5vh auto;
+  }
+
+  .mainBox {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .sideBar {
+    background-color: #ffc89f;
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    line-height: 1vh;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    overflow: visible;
+  }
+
+  .bigEmptyDiv {
+    padding-top: 50vh;
+  }
+
+  .greeting {
+    text-align: center;
+    padding-left: 0vw;
+  }
+
+  .downArrow {
+    font-size: 5vh;
+  }
+
+  .socialIcons {
+    background-color: #ffc89f;
+    width: 30%;
+    font-size: 2.6vh;
+    display: flex;
+    flex-direction: row;
+    align-self: flex-start;
+    justify-content: space-evenly;
+    padding-top: 3vh;
+    padding-left: 1.1vw;
+    padding-bottom: 1vh;
+  }
+
+  .socialIconsBottom {
+    font-size: 2.6vh;
+    display: flex;
+    margin: 5vh auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nameBox {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.6vw;
+    max-width: 100%;
+    background-color: #ffc89f;
+    padding: 1.8vw;
+    height: auto;
+  }
+
+  .indent {
+    align-self: baseline;
+    padding-left: 3vh;
+  }
+
+  .contentBox {
+    width: 100%;
+    font-size: 1.9vh;
+    overflow-y: scroll;
+  }
+
+  .skillsBox {
+    font-size: 8vw;
+  }
+
+  .innerContent {
+    margin-bottom: 5vh;
+  }
+
+  .intro {
+    /* margin-top: 7vh; */
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .bigEmptyDiv {
+    padding-top: 40vh;
+  }
+
+  .anchor1:target {
+    padding-top: 39vh;
+  }
+
+  .introSection {
+    margin-top: 30vh;
+    line-height: 5vh;
+  }
+  .socialIconsBottom {
+    font-size: 3.2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .mainBox {
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0vh;
+    flex-direction: column;
+  }
+
+  .sideBar {
+    background-color: #ffc89f;
     display: flex;
     flex-direction: column;
     line-height: 1vw;
     justify-content: center;
-    flex-grow: 1;
-    width: auto;
-    height: auto;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-
-}
-
-.nameBox {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.6vw;
-    width: 90%;
-    background-color: #FFC89F;
-    padding: 1.8vw;
-    -webkit-animation: fadein 3.3s;
-    -moz-animation: fadein 3.3s;
-    -ms-animation: fadein 3.3s;
-    -o-animation: fadein 3.3s;
-    animation: fadein 3.3s;
-}
-
-.skillsSection {
-    width: 100%;
-    margin-top: 10vh;
-}
-
-.projectSection {
     width: 100%;
     height: auto;
-    margin: 10vh auto;
-}
+    padding: 1vh;
+    overflow: visible;
+  }
 
-img {
-    width: 100%;
-    height: auto;
-}
-
-.pyGame {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    margin: 5vh auto;
-
-}
-
-.greeting {
-    text-align: center;
-}
-
-.sectionTitle {
-    font-size: 3vh;
-    font-weight: bold;
-    padding-right: 2vw;
-}
-
-.projectTitle {
-    font-size: 3vh;
-    font-weight: bold;
-    padding-right: 2vw;
-}
-
-.twentyFourGoProject {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: auto;
-}
-
-.twentyFourGoImgWrap {
-    width: 90%;
-    height: auto;
-    margin: 3vh auto;
-}
-
-.pandemicGeorgiaWrap {
-    width: 90%;
-    height: auto;
-    margin: 3vh auto;
-}
-
-
-.pyImgWrap {
-    width: 90%;
-    height: auto;
-    margin: 3vh auto;
-    display: flex;
-    align-items: center;
-}
-
-.skillsBox {
-    font-size: 4vw;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 10vh auto;
-}
-
-
-.imgWrap {
-    width: 80%;
-    margin: 7vh auto;
-}
-
-p {
-    font-size: 2.2vh;
-    line-height: 4vh;
-}
-
-.publicImgLimited {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-a {
-    font-family: Helvetica, sans-serif;
-    text-decoration: none;
-    color: rgb(33, 33, 33);
-    transition: 0.3s ease-in-out;
-}
-
-a:hover {
-    color: #ffa29f;
-    transform: scale(1.3)
-}
-
-.socialIcons {
-    font-size: 2.5vw;
-    padding-left: 1.8vw;
-    -webkit-animation: fadein 3.3s;
-    -moz-animation: fadein 3.3s;
-    -ms-animation: fadein 3.3s;
-    -o-animation: fadein 3.3s;
-    animation: fadein 3.3s;
-}
-
-.indent {
-    align-self: center;
-}
-
-.mainBox {
+  .socialIcons {
+    width: 40%;
+    font-size: 2.6vh;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    height: 100%;
-    scroll-behavior: smooth;
-    overflow-Y: scroll;
-}
+    align-self: flex-start;
+    justify-content: space-evenly;
+    padding-top: 2vh;
+    padding-left: 2.1vw;
+  }
 
-
-.playlistLinks {
-    font-size: 3vh;
-}
-
-.downArrow {
-    font-size: 5vh;
-}
-
-.intro {
-    width: 80%;
-    margin: auto;
-}
-
-.innerContent {
-    width: 80%;
-    height: auto;
-    margin: 0 auto 20vh auto;
-    overflow: visible;
-}
-
-.bigEmptyDiv {
+  .socialIconsBottom {
+    font-size: 2.6vh;
     display: flex;
     flex-direction: column;
+    align-self: flex-start;
     align-items: center;
-    padding-top: 34vh;
-    padding-bottom: 53vh;
-    -webkit-animation: fadein 3.3s;
-    -moz-animation: fadein 3.3s;
-    -ms-animation: fadein 3.3s;
-    -o-animation: fadein 3.3s;
-    animation: fadein 3.3s;
+  }
 
-}
-
-.contentBox {
-    display: flex;
-    background-color: rgba(255, 200, 159, 0.18);
-    flex-direction: column;
-    font-size: 1.5vw;
-    line-height: 7vh;
-    width: 73%;
-    flex-grow: 1;
-    height: 100vh;
-    scroll-behavior: smooth;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-}
-
-.anchor1 {
-    visibility: hidden;
-}
-
-.playlist {
+  .nameBox {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    font-size: 2.9vw;
+    width: 100%;
+    background-color: #ffc89f;
+    padding: 1.8vw;
     height: auto;
-    margin: auto;
-}
+  }
 
+  .indent {
+    align-self: baseline;
+    padding-left: 3vh;
+  }
 
+  .contentBox {
+    width: 100%;
+    line-height: 10vh;
+    font-size: 1.9vh;
+    overflow-y: scroll;
+  }
 
+  .greeting {
+    padding-left: -1vw;
+  }
 
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
+  .bigEmptyDiv {
+    padding-top: 30vh;
+  }
 
-    to {
-        opacity: 1;
-    }
-}
-
-
-@-moz-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-
-@-ms-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-
-@media screen and (max-width: 1380px) {
-    .bigEmptyDiv {
-        padding-top: 35vh;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .bigEmptyDiv {
-        padding-top: 39vh;
-        padding-bottom: 53vh;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    .introSection {
-        /* font-size: 3.2vh; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 35vh;
-    }
-
-    .imgWrap {
-        margin: 5vh auto
-    }
-
-    .mainBox {
-        display: flex;
-        width: 100%;
-        height: auto;
-        margin: 0;
-        flex-direction: column;
-    }
-
-    .sideBar {
-        background-color: #FFC89F;
-        position: fixed;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        line-height: 1vh;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        overflow: visible;
-
-    }
-
-    .bigEmptyDiv {
-        padding-top: 50vh;
-    }
-
-    .greeting {
-        text-align: center;
-        padding-left: 0vw;
-    }
-
-    .downArrow {
-        font-size: 5vh;
-    }
-
-
-    .socialIcons {
-        background-color: #FFC89F;
-        width: 30%;
-        font-size: 2.6vh;
-        display: flex;
-        flex-direction: row;
-        align-self: flex-start;
-        justify-content: space-evenly;
-        padding-top: 3vh;
-        padding-left: 1.1vw;
-        padding-bottom: 1vh;
-    }
-
-    .nameBox {
-        display: flex;
-        flex-direction: column;
-        font-size: 2.6vw;
-        max-width: 100%;
-        background-color: #FFC89F;
-        padding: 1.8vw;
-        height: auto;
-    }
-
-    .indent {
-        align-self: baseline;
-        padding-left: 3vh;
-
-    }
-
-    .contentBox {
-        width: 100%;
-        font-size: 1.9vh;
-        overflow-y: scroll;
-    }
-
-    .skillsBox {
-        font-size: 8vw;
-    }
-
-    .innerContent {
-        margin-bottom: 50vh;
-    }
-
-    .intro {
-        /* margin-top: 7vh; */
-        text-align: center;
-    }
-
-}
-
-@media screen and (max-width: 375px) {
-
-    .bigEmptyDiv {
-        padding-top: 40vh;
-    }
-
-    .anchor1:target {
-        padding-top: 39vh;
-    }
-
-    .introSection {
-        margin-top: 30vh;
-        line-height: 5vh;
-    }
-}
-
-
-@media screen and (max-width: 300px) {
-    body {
-        margin: 0;
-        padding: 0;
-        ;
-    }
-
-    .mainBox {
-        display: flex;
-        width: 100%;
-        height: auto;
-        margin: 0vh;
-        flex-direction: column;
-    }
-
-    .sideBar {
-        background-color: #FFC89F;
-        display: flex;
-        flex-direction: column;
-        line-height: 1vw;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        padding: 1vh;
-        overflow: visible;
-
-    }
-
-    .socialIcons {
-        width: 40%;
-        font-size: 2.6vh;
-        display: flex;
-        flex-direction: row;
-        align-self: flex-start;
-        justify-content: space-evenly;
-        padding-top: 2vh;
-        padding-left: 2.1vw;
-    }
-
-    .nameBox {
-        display: flex;
-        flex-direction: column;
-        font-size: 2.9vw;
-        width: 100%;
-        background-color: #FFC89F;
-        padding: 1.8vw;
-        height: auto;
-    }
-
-    .indent {
-        align-self: baseline;
-        padding-left: 3vh;
-        ;
-    }
-
-    .contentBox {
-        width: 100%;
-        line-height: 10vh;
-        font-size: 1.9vh;
-        overflow-y: scroll;
-    }
-
-    .greeting {
-        padding-left: -1vw;
-    }
-
-    .bigEmptyDiv {
-        padding-top: 30vh;
-    }
-
-    /* .downArrow {
+  /* .downArrow {
         font-size: 7vh;
     } */
 }
