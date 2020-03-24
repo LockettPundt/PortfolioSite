@@ -1,3 +1,5 @@
+
+
 html {
   color: rgb(33, 33, 33);
   font-size: 16px;
@@ -5,7 +7,14 @@ html {
   height: 100%;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
 
 .introSection {
   display: flex;
@@ -43,8 +52,7 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 1.6vw;
-  width: 90%;
-  /* font-weight: 900; */
+  width: 100%;
   background-color: #ffc89f;
   padding: 1.8vw;
   -webkit-animation: fadein 3.3s;
