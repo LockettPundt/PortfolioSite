@@ -391,8 +391,8 @@ a:hover {
     flex-direction: row;
     align-self: flex-start;
     justify-content: space-evenly;
-    padding-top: 3vh;
-    padding-left: 1.1vw;
+    /* padding-top: 3vh; */
+    padding-left: 2.1vw;
     padding-bottom: 1vh;
   }
 
@@ -441,7 +441,7 @@ a:hover {
 }
 @media screen and (max-width: 450px) {
   .nameBox {
-    font-size: 3.2vw;
+    font-size: 2.8vw;
   }
 }
 
@@ -499,7 +499,7 @@ a:hover {
     flex-direction: row;
     align-self: flex-start;
     justify-content: space-evenly;
-    padding-top: 2vh;
+    /* padding-top: 2vh; */
     padding-left: 2.1vw;
   }
 
@@ -514,7 +514,7 @@ a:hover {
   .nameBox {
     display: flex;
     flex-direction: column;
-    font-size: 4.9vw;
+    font-size: 3.2vw;
     width: 100%;
     background-color: #ffc89f;
     padding: 1.8vw;
@@ -544,4 +544,11 @@ a:hover {
   /* .downArrow {
         font-size: 7vh;
     } */
+    
+}
+@media screen and (max-width: 200px) {
+  
+  .nameBox {
+    font-size: 3.9vw;;
+  }
 }
