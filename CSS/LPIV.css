@@ -332,6 +332,10 @@ a:hover {
     margin: 0;
     padding: 0;
   }
+  
+  p {
+    font-size: 2.8vh;
+  }
 
   .introSection {
     display: flex;
@@ -362,7 +366,7 @@ a:hover {
     justify-content: center;
     width: 100%;
     height: auto;
-    padding: 0;
+    padding: 1vh;
     overflow: visible;
   }
 
@@ -435,6 +439,11 @@ a:hover {
     text-align: center;
   }
 }
+@media screen and (max-width: 450px) {
+  .nameBox {
+    font-size: 3.2vw;
+  }
+}
 
 @media screen and (max-width: 375px) {
   .bigEmptyDiv {
@@ -505,7 +514,7 @@ a:hover {
   .nameBox {
     display: flex;
     flex-direction: column;
-    font-size: 2.9vw;
+    font-size: 4.9vw;
     width: 100%;
     background-color: #ffc89f;
     padding: 1.8vw;
