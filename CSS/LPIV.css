@@ -382,11 +382,11 @@ a:hover {
   .downArrow {
     font-size: 5vh;
   }
-
+  
   .socialIcons {
     background-color: #ffc89f;
-    width: 30%;
-    font-size: 2.6vh;
+    width: 40%;
+    font-size: 6.5vw;
     display: flex;
     flex-direction: row;
     align-self: flex-start;
@@ -408,7 +408,7 @@ a:hover {
   .nameBox {
     display: flex;
     flex-direction: column;
-    font-size: 2.6vw;
+    font-size: 2.9vw;
     max-width: 100%;
     background-color: #ffc89f;
     padding: 1.8vw;
@@ -494,7 +494,7 @@ a:hover {
 
   .socialIcons {
     width: 40%;
-    font-size: 2.6vh;
+    /* font-size: 2.6vh; */
     display: flex;
     flex-direction: row;
     align-self: flex-start;
