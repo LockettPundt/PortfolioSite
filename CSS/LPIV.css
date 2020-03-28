@@ -176,16 +176,25 @@ a:hover {
 
 .socialIconsBottom {
   display: flex;
+  width: 50%;
   flex-direction: column;
   justify-items: center;
   align-items: center;
   font-size: 2.5vw;
-  margin-top: 30vh;
+  margin: 30vh auto 0vh auto;
+  
   -webkit-animation: fadein 3.3s;
   -moz-animation: fadein 3.3s;
   -ms-animation: fadein 3.3s;
   -o-animation: fadein 3.3s;
   animation: fadein 3.3s;
+}
+
+.socialIconsBottom div {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .indent {
