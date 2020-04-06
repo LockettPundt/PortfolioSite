@@ -210,8 +210,8 @@ a:hover {
   overflow-y: scroll;
 }
 
-.playlistLinks {
-  font-size: 3vh;
+.playlist div a {
+  font-size: 2.6vh;
 }
 
 .downArrow {
